@@ -1,17 +1,17 @@
 \version "2.16.2"
 % http://erato.uvt.nl/files/imglnks/usimg/b/bc/IMSLP00628-Chopin_-_3_Ecossiases__Op_72.pdf
 \score {
-    \new PianoStaff = main <<
-        \time 2/4
-		\key d \major
-		\tempo "Vivace" 4 = 108
+	\new PianoStaff = main <<
 		\new Staff = "right_hand" {
-			\relative c'' {
-				\partial 8 fis8 |
-				a16 r32 b' a16 r32 g,  a16 r32 b'  a16 r32 fis |
-				a16 r32 b' a16 r32 fis a16 r32 e'' d16 r32 cis |
-				% and so on...
-			}
+			\time 2/4
+			\key d \major
+			\tempo "Vivace" 4 = 108
+				\relative c' {
+					\partial 8 fis8 |
+					a16 r32 b' a16 r32 g, a16 r32 b' a16 r32 fis, |
+					a16 r32 b' a16 r32 fis a16 r32 e'' d16 r32 cis |
+					% and so on...
+                }
         }
     >>
 }
